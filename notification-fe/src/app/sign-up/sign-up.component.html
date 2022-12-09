@@ -1,0 +1,21 @@
+<!-- <div>
+  <label for ="name"> Your name: </label>
+  <input id="name" [(ngModel)] = "user.name" placeholder="name">
+</div>
+<p>{{user.name}}</p> -->
+
+<h2> users </h2>
+<ul class="users">
+  <li *ngFor="let user of users" (click)="onSelect(user)">
+    <!-- <span class="badge">{{user.id}} - {{user.name}}</span> -->
+
+
+
+  </li>
+</ul>
+<h2>{{selectedHero.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{selectedHero.id}}</div>
+    <div>
+      <label for="hero-name">Hero name: </label>
+      <input id="hero-name" [(ngModel)]="selectedHero.name" placeholder="name">
+    </div>
